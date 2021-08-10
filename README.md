@@ -1,4 +1,4 @@
-#zerotrust
+# zerotrust
 ### Trust nobody? Make your own VPN.
 #### Linux 
 1) Run Script on server machine
