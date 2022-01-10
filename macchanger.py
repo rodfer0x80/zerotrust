@@ -1,6 +1,10 @@
+#!/usr/bin/python3
+
+
 import subprocess
 import random
 import re
+import os
 
 
 def get_current_mac(interface):
@@ -43,6 +47,9 @@ def generate_new_mac():
     return new_mac
 
 if __name__ == '__main__':
+    if os.geteuid() != 0:
+        print("Error: program must be run as sudo")
+        exit(0)
     interface = input("Enter interface name or ENTER for default value wlan0\n>>> ")
     perm_mac = get_current_mac(interface)
     new_mac = generate_new_mac()
