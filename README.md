@@ -1,7 +1,7 @@
 # zerotrust
-<img src="imgs/openvpn.jpg"></img>
-<h5> Made using OpenVPN <h5>
 ### Trust nobody? Make your own VPN.
+<img src="imgs/openvpn.jpg" width="280px" height="160px"></img>
+##### Using OpenVPN
 #### Linux 
 1) Run Script on server machine
 2) Control VPN with 'menu' script
