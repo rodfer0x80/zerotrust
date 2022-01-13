@@ -51,6 +51,8 @@ if __name__ == '__main__':
         print("Error: program must be run as sudo")
         exit(0)
     interface = input("Enter interface name or ENTER for default value wlan0\n>>> ")
+    if interface == "":
+        interface = "wlan0"
     perm_mac = get_current_mac(interface)
     new_mac = generate_new_mac()
     change_mac(interface, perm_mac, new_mac)
