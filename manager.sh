@@ -2,7 +2,7 @@
 while [ 1 ]
 do
 	echo -e "\n\n***********************"
-	echo "    trevalkov_vpn"
+	echo "    vpn manager"
 	echo -e "\n***********************"
 	echo "0) Exit"
 	echo "1) Start"

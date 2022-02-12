@@ -1,9 +1,6 @@
 #!/bin/bash
 # Script from: https://github.com/Nyr/openvpn-install
 
-# Change MAC address
-./macchanger.py || echo "[x] Error changing MAC address on line 5" && exit
-
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
 	echo 'This installer needs to be run with "bash", not "sh".'
