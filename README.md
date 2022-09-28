@@ -19,7 +19,7 @@
 0) sudo vim /etc/openvpn/server/server.conf
 1) echo 'push "dhcp-option DNS 10.8.0.1"' >> /etc/openvpn/server/server.conf
 2) sudo systemctl restart openvpn-server@server
-3) sudo echo -e '127.0.0.1\t$(hostname)'
+3) sudo echo -e '127.0.0.1\t$(hostname)' >> /etc/hosts
 ```
 ```
 -- UFW
