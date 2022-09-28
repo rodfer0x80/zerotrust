@@ -14,3 +14,16 @@
 4) Have openvpn installed on client machine
 5) Use VPN on client with "$ sudo openvpn zerotrust.ovpn"
 ```
+```
+-- PiHole
+0) sudo vim /etc/openvpn/server/server.conf
+1) echo 'push "dhcp-option DNS 10.8.0.1"' >> /etc/openvpn/server/server.conf
+2) sudo systemctl restart openvpn-server@server
+3) sudo echo -e '127.0.0.1\t$(hostname)'
+```
+```
+-- UFW
+1) ufw allow proto tcp from 10.8.0.0/24 to 10.8.0.1 port 80
+2) ufw allow proto tcp from 10.8.0.0/24 to 10.8.0.1 port 53
+3) ufw allow proto udp from 10.8.0.0/24 to 10.8.0.1 port 53
+```
