@@ -8,7 +8,8 @@
 ```
 ```
 --  OpenVPN
-1) Run Script on server machine
+1) Read script before installing or atleast run a checksum check
+1) sudo ./openvpn_install
 2) Control VPN with 'menu' script
 3) Move .ovpn file to client machine
 4) Have openvpn installed on client machine
@@ -16,10 +17,10 @@
 ```
 ```
 -- PiHole
-0) sudo vim /etc/openvpn/server/server.conf
-1) echo 'push "dhcp-option DNS 10.8.0.1"' >> /etc/openvpn/server/server.conf
-2) sudo systemctl restart openvpn-server@server
-3) sudo echo -e '127.0.0.1\t$(hostname)' >> /etc/hosts
+1)sudo vim /etc/pihole/setupVars.conf [IPV4_ADDRESS=10.8.0.1/24]
+2) sudo vim /etc/openvpn/server/server.conf [push "dhcp-option DNS 10.8.0.1"]
+3) sudo systemctl restart openvpn-server@server
+4) sudo echo -e '127.0.0.1\t$(hostname)' >> /etc/hosts
 ```
 ```
 -- UFW
@@ -27,3 +28,6 @@
 2) ufw allow proto tcp from 10.8.0.0/24 to 10.8.0.1 port 53
 3) ufw allow proto udp from 10.8.0.0/24 to 10.8.0.1 port 53
 ```
+
+## Research
+- Setup OpenVPN with PiHole on AWS [https://victoria.dev/blog/set-up-a-pi-hole-vpn-on-an-aws-lightsail-instance/]
