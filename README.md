@@ -30,4 +30,5 @@
 ```
 
 ## Research
+- Setup pivpn (pihole+openvpn) [https://www.scaleway.com/en/docs/tutorials/pihole-vpn/]
 - Setup OpenVPN with PiHole on AWS [https://victoria.dev/blog/set-up-a-pi-hole-vpn-on-an-aws-lightsail-instance/]
