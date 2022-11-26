@@ -16,8 +16,8 @@
 5) Use VPN on client with "$ sudo openvpn zerotrust.ovpn"
 ```
 ```
--- PiHole
-1)sudo vim /etc/pihole/setupVars.conf [IPV4_ADDRESS=10.8.0.1/24]
+-- PiHole / PiVPN
+1) sudo vim /etc/pihole/setupVars.conf [IPV4_ADDRESS=10.8.0.1/24]
 2) sudo vim /etc/openvpn/server/server.conf [push "dhcp-option DNS 10.8.0.1"]
 3) sudo systemctl restart openvpn-server@server
 4) sudo echo -e '127.0.0.1\t$(hostname)' >> /etc/hosts

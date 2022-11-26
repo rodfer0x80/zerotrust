@@ -3,7 +3,7 @@ USERNAME=webmaster
 useradd $USERNAME
 passwd $USERNAME
 usermod -aG wheel $USERNAME
-usermod --shell /bin/bash $USERNAME
+usermod --shell /bin/zsh $USERNAME
 su $USERNAME
 mkdir /$USERNAME
 echo "[*] User information:"
