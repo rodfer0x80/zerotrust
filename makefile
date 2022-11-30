@@ -10,10 +10,6 @@ user_setup:
 macchanger:
 	ext/macchanger.py
 
-.PHONY: ufw_setup
-ufw_setup:
-	ext/ufw_setup.sh
-
 .PHONY: pihole_install
 pihole_install:
 	scripts/pihole_install.sh

@@ -1,0 +1,34 @@
+Welcome to this quick OpenVPN "road warrior" installer
+
+I need to ask you a few questions before starting the setup
+You can leave the default options and just press enter if you are ok with them
+
+First I need to know the IPv4 address of the network interface you want OpenVPN
+listening to.
+IP address: 10.8.0.1 // Jason's notes: if you are behind NAT, just put your
+ipv4 IP address
+
+Which protocol do you want for OpenVPN connections?
+   1) UDP (recommended)
+   2) TCP
+Protocol [1-2]: 1
+
+What port do you want OpenVPN listening to?
+Port: 1194
+
+Which DNS do you want to use with the VPN?
+   1) Current system resolvers
+   2) Google
+   3) OpenDNS
+   4) NTT
+   5) Hurricane Electric
+   6) Verisign
+DNS [1-6]: 1
+
+Finally, tell me your name for the client certificate
+Please, use one word only, no special characters
+Client name: pihole
+
+Okay, that was all I needed. We are ready to set up your OpenVPN server now
+Press any key to continue...
+
