@@ -22,10 +22,3 @@
 3) sudo systemctl restart openvpn-server@server
 4) sudo echo -e '127.0.0.1\t$(hostname)' >> /etc/hosts
 ```
-```
--- UFW
-```
-
-## Research
-- Setup pivpn (pihole+openvpn) [https://www.scaleway.com/en/docs/tutorials/pihole-vpn/]
-- Setup OpenVPN with PiHole on AWS [https://victoria.dev/blog/set-up-a-pi-hole-vpn-on-an-aws-lightsail-instance/]
