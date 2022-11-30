@@ -1,3 +1,7 @@
+.PHONY: test_dns
+test_dns:
+	ext/test_dns.sh
+
 .PHONY: iptables_setup
 iptables_setup:
 	ext/iptables_setup.sh
@@ -14,9 +18,9 @@ macchanger:
 pihole_install:
 	scripts/pihole_install.sh
 
-.PHONY: openvpn_install
-openvpn_install:
-	scripts/openvpn_install.sh
+.PHONY: openvpn-install
+openvpn-install:
+	scripts/openvpn-install.sh
 
 .PHONY: hw_pivpn_install
 hw_pivpn_install:
