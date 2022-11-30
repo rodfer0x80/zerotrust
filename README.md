@@ -16,7 +16,7 @@
 5) Use VPN on client with "$ sudo openvpn zerotrust.ovpn"
 ```
 ```
--- PiHole / PiVPN
+-- PiHole
 1) sudo vim /etc/pihole/setupVars.conf [IPV4_ADDRESS=10.8.0.1/24]
 2) sudo vim /etc/openvpn/server/server.conf [push "dhcp-option DNS 10.8.0.1"]
 3) sudo systemctl restart openvpn-server@server
@@ -24,9 +24,6 @@
 ```
 ```
 -- UFW
-1) ufw allow proto tcp from 10.8.0.0/24 to 10.8.0.1 port 80
-2) ufw allow proto tcp from 10.8.0.0/24 to 10.8.0.1 port 53
-3) ufw allow proto udp from 10.8.0.0/24 to 10.8.0.1 port 53
 ```
 
 ## Research
