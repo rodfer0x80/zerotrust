@@ -5,7 +5,7 @@ You can leave the default options and just press enter if you are ok with them
 
 First I need to know the IPv4 address of the network interface you want OpenVPN
 listening to.
-IP address: 10.8.0.1 // Jason's notes: if you are behind NAT, just put your
+IP address: 10.8.0.1 // if you are behind NAT, just put your
 ipv4 IP address
 
 Which protocol do you want for OpenVPN connections?
