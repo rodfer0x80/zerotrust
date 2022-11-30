@@ -20,7 +20,6 @@ sudo iptables -A INPUT -i lo -j ACCEPT
 sudo iptables -A OUTPUT -o lo -j ACCEPT
 # Notes: if you are behind a NAT, you will also need to do the following:
 IFACE=$(echo $(ip r | grep default) | cut -d " " -f5)
-echo $IFACE
 sudo iptables -t nat -A POSTROUTING  -s 10.8.0.0/24 -o $IFACE -j MASQUERADE
 # Allow established sessions to receive traffic
 sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
